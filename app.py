@@ -71,7 +71,7 @@ def submit():
         wd = (float(request.form['wd']) - 183.342154) / 106.711185
         rh = (float(request.form['rh']) - 31.980602 )/ 19.924954
         pressure = (float(request.form['pressure']) - 940.843683) / 4.948983	
-        atminutes = (((float(request.form['hour']) * 60) + (float(request.form['min']))) - 705.000000)/ 415.605927
+        atminutes = (((float(request.form['hour']) * 60) + float(request.form['min'])) - 705.000000))/ 415.605927
         year1 = float(request.form['Year'])
         month1 = float(request.form['Month'])
         x = float(request.form['Day'])
