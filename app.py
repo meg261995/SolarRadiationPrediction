@@ -103,7 +103,7 @@ def submit():
         feat = [np.array([ct,dp,sza,sa,ws,ps,wd,rh,pressure,atminutes,*ydf.values,*mdf.values,*ddf.values])]
         pred = model.predict(feat)
 
-        render_template("solar.html", prediction_text = 'Solar Radiation for the given time is {}'.format(pred))
+        return render_template("solar.html", prediction_text = 'Solar Radiation for the given time is {}'.format(pred))
 
         
 
